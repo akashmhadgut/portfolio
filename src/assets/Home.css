@@ -1,0 +1,87 @@
+:root {
+  --navbar-height: 80px; /* adjust based on your Navbar */
+}
+
+.home-section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Background video */
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Overlay text */
+.overlay-text {
+  position: relative;
+  z-index: 1;
+  height: calc(100% - var(--navbar-height));
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  flex-direction: column;
+  margin-top: var(--navbar-height); /* pushes below navbar */
+}
+
+.about-text {
+  font-weight: bold;
+  color: white;
+  max-width: 100%;
+  padding: 0 1rem;
+}
+
+.intro-text {
+  font-style: italic;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+.main-text,
+.dev-text {
+  font-size: 4rem;
+  letter-spacing: 5px;
+  line-height: 1.2;
+}
+
+/* Responsive scaling */
+@media (min-width: 576px) {
+  .intro-text { font-size: 3rem; }
+  .main-text, .dev-text { font-size: 5rem; }
+}
+
+@media (min-width: 768px) {
+  .intro-text { font-size: 3.5rem; }
+  .main-text, .dev-text { font-size: 6rem; }
+}
+
+@media (min-width: 992px) {
+  .intro-text { font-size: 4rem; }
+  .main-text, .dev-text { font-size: 7rem; }
+}
+
+@media (min-width: 1200px) {
+  .intro-text { font-size: 4.5rem; }
+  .main-text, .dev-text { font-size: 8rem; }
+}
+
+@media (min-width: 1400px) {
+  .intro-text { font-size: 5rem; }
+  .main-text, .dev-text { font-size: 9rem; }
+}
+
+/* Prevent text overflow */
+h1 {
+  word-break: break-word;
+}

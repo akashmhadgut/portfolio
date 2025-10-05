@@ -1,0 +1,42 @@
+.project-card {
+  transition: all 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.project-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.15);
+}
+
+.project-img-wrapper {
+  height: 200px;
+  overflow: hidden;
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-img {
+  transform: scale(1.1);
+}
+
+/* Badge Styling */
+.tech-badge {
+  font-size: 0.75rem;
+  padding: 0.4em 0.6em;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+/* Different colors for tech */
+.tech-badge.html { background: #f06529; color: white; }
+.tech-badge.css { background: #2965f1; color: white; }
+.tech-badge.javascript { background: #f0db4f; color: black; }
+.tech-badge.mysql { background: #00758f; color: white; }
+.tech-badge.react { background: #61dbfb; color: black; }
+.tech-badge.bootstrap { background: #563d7c; color: white; }
