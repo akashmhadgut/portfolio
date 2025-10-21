@@ -4,7 +4,7 @@ import About from './assets/About'
 import Contact from './assets/Contact'
 import Footer from './assets/Footer'
 import Home from './assets/Home'
-// import NavBar from './assets/Navbar'
+import NavBar from './assets/Navbar'
 import Projects from './assets/Projects'
 import Resume from './assets/Resume'
 
@@ -20,6 +20,8 @@ function App() {
        <Resume></Resume>
        <Contact></Contact>
        <Footer></Footer>
+      <NavBar />
+
      </>
   )
 }

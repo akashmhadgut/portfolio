@@ -1,87 +1,93 @@
-:root {
-  --navbar-height: 80px; /* adjust based on your Navbar */
-}
-
 .home-section {
   position: relative;
-  height: 100vh;
   width: 100%;
+  min-height: 100vh;
+  color: #fff;
+  background: radial-gradient(circle at 30% 40%, rgba(0,183,255,0.2) 0%, rgba(0,0,0,0.9) 70%),
+              linear-gradient(135deg, #020024 0%, #001933 50%, #000915 100%);
   overflow: hidden;
+  padding-top: 100px; /* Prevents overlap with fixed navbar */
 }
 
-/* Background video */
-.background-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
-
-/* Overlay text */
-.overlay-text {
+.glow-circle {
   position: relative;
-  z-index: 1;
-  height: calc(100% - var(--navbar-height));
-  width: 100%;
+  width: 290px;
+  height: 290px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0,183,255,0.2) 0%, rgba(0,0,0,0) 70%);
+  box-shadow: 0 0 40px rgba(0,183,255,0.5);
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  padding: 1rem;
-  flex-direction: column;
-  margin-top: var(--navbar-height); /* pushes below navbar */
 }
 
-.about-text {
-  font-weight: bold;
-  color: white;
-  max-width: 100%;
-  padding: 0 1rem;
+.glow-circle img {
+  width: 300px;
+  height: 260px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid rgba(0,183,255,0.8);
 }
 
-.intro-text {
-  font-style: italic;
-  font-size: 2.5rem;
-  letter-spacing: 1px;
+.hero-text h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
 }
 
-.main-text,
-.dev-text {
-  font-size: 4rem;
-  letter-spacing: 5px;
-  line-height: 1.2;
+.hero-text h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
 }
 
-/* Responsive scaling */
-@media (min-width: 576px) {
-  .intro-text { font-size: 3rem; }
-  .main-text, .dev-text { font-size: 5rem; }
+.highlight-text {
+  color: #00b7ff;
 }
 
-@media (min-width: 768px) {
-  .intro-text { font-size: 3.5rem; }
-  .main-text, .dev-text { font-size: 6rem; }
+.hero-text p {
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
 
-@media (min-width: 992px) {
-  .intro-text { font-size: 4rem; }
-  .main-text, .dev-text { font-size: 7rem; }
+.social-icons a {
+  color: #00b7ff;
+  transition: all 0.3s ease;
 }
 
-@media (min-width: 1200px) {
-  .intro-text { font-size: 4.5rem; }
-  .main-text, .dev-text { font-size: 8rem; }
+.social-icons a:hover {
+  color: #fff;
+  transform: scale(1.2);
 }
 
-@media (min-width: 1400px) {
-  .intro-text { font-size: 5rem; }
-  .main-text, .dev-text { font-size: 9rem; }
-}
+/* Responsive Fixes */
+@media (max-width: 991px) {
+  .home-section {
+    padding-top: 120px;
+    text-align: center;
+  }
 
-/* Prevent text overflow */
-h1 {
-  word-break: break-word;
+  .glow-circle {
+    width: 220px;
+    height: 220px;
+  }
+
+  .glow-circle img {
+    width: 190px;
+    height: 190px;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text h2 {
+    font-size: 1.2rem;
+  }
+
+  .hero-text p {
+    font-size: 0.95rem;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
 }

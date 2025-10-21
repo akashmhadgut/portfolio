@@ -81,7 +81,7 @@ function NavBar() {
           </Nav>
 
           <Nav className="ms-auto fs-4 d-none d-lg-flex social-links">
-            <Nav.Link href="https://www.instagram.com/akash.mhadgut.15?igsh=MWswdzMzbjR3cDIzaA==" target="_blank" className="ps-3">
+            {/* <Nav.Link href="https://www.instagram.com/akash.mhadgut.15?igsh=MWswdzMzbjR3cDIzaA==" target="_blank" className="ps-3">
               <FaInstagram />
             </Nav.Link>
             <Nav.Link href="https://www.facebook.com/akash.mhadgut.3" target="_blank" className="ps-3">
@@ -92,6 +92,15 @@ function NavBar() {
             </Nav.Link>
             <Nav.Link href="https://x.com/AkashMhadg56099?t=t8HuYZ7GGWpK4Xr_FbvcEA&s=09" target="_blank" className="ps-3">
               <FaXTwitter />
+            </Nav.Link> */}
+             <Nav.Link href="https://x.com/AkashMhadg56099?t=t8HuYZ7GGWpK4Xr_FbvcEA&s=09" target="_blank" className="ps-3">
+               <a
+            className="btn btn-outline-primary btn-lg px-4 py-2"
+            href="src/AkashMhadgut_Cv.pdf"
+            download
+          >
+            📥 Download CV
+          </a>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

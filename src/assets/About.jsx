@@ -16,41 +16,16 @@ function About() {
                   <FaUser size={120} className="icon bg-primary" />
                   <h2 className="fw-bold">About Me</h2>
                 </div>
-        <Row className="align-items-center justify-content-center mb-5">
-          <Col md={3} className="text-center">
-            <img
-              src="src/profilepic.jpg"
-              alt="Profile"
-              className="img-fluid rounded-circle shadow"
-              style={{ maxWidth: '160px', objectFit: 'cover' }}
-            />
-            <h3 className="mt-3">Akash Mhadgut</h3>
-            <h5 className="text-info mt-2">
-              <Typewriter
-                words={['Full Stack Developer', 'Building Web Apps', 'Loving React ❤️']}
-                loop={true}
-                cursor
-                cursorStyle="|"
-                typeSpeed={70}
-                deleteSpeed={50}
-                delaySpeed={1000}
-              />
-            </h5>
-          </Col>
-
-          <Col md={9}>
+        <Row className="justify-content-center mb-5">
+          <Col md={10}>
             <p className="lead">
-              Hi, I’m <strong>Akash Mhadgut</strong>, a recent BCA graduate passionate about
-              building clean, responsive, and user-friendly web applications.
+              Hi, I’m <strong>Akash Mhadgut</strong>, a passionate Full Stack Developer dedicated to building clean,
+              responsive, and high-performance web applications. I specialize in React, Node.js, Express, and modern
+              frontend technologies to create dynamic and user-focused experiences.
             </p>
             <p>
-              I specialize in <strong>React, JavaScript, HTML, CSS, and Bootstrap</strong>. I enjoy turning
-              ideas into functional projects and continuously learning modern web development tools to
-              stay ahead in the field.
-            </p>
-            <p>
-              Currently, I’m working on small React projects to sharpen my frontend development skills
-              and preparing for my first role as a <strong>Frontend Developer</strong>.
+              I enjoy solving complex problems through clean code, intuitive design, and continuous learning.
+              My goal is to deliver projects that are not only functional but also visually engaging and accessible.
             </p>
 
             <div className="d-flex gap-3 mt-4">
@@ -61,49 +36,49 @@ function About() {
         </Row>
 
         {/* Skills Section */}
-        <div className='glass-card mb-5 p-4'>
-        <h2 className="text-center mb-5 ">🛠️Skills</h2>
-        <Row className="gy-4 gx-4  ">
-          <Col md={4} >
-            <div className="p-4  text-dark rounded-4 shadow-sm h-100 skill-cards">
-              <h5 className="fw-bold mb-3 ">Frontend Development</h5>
-              <ul className="list-unstyled ps-2 ">
-                <li><FaHtml5></FaHtml5> HTML</li>
-                <li> <FaCss3></FaCss3> CSS</li>
-                <li> <FaJs></FaJs> JavaScript</li>
-                <li> <FaReact></FaReact> React</li>
-                <li> <FaBootstrap></FaBootstrap> Bootstrap</li>
+        <div className="glass-card mb-5 p-4">
+          <h2 className="text-center mb-5">🛠️ Skills</h2>
+          <Row className="gy-4 gx-4">
+            {/* Frontend */}
+            <Col md={4}>
+              <div className="p-4 text-dark rounded-4 shadow-sm h-100 skill-cards">
+                <h5 className="fw-bold mb-3">Frontend Development</h5>
+                <ul className="list-unstyled ps-2">
+                  <li><FaHtml5 /> HTML</li>
+                  <li><FaCss3 /> CSS</li>
+                  <li><FaJs /> JavaScript</li>
+                  <li><FaReact /> React</li>
+                  <li><FaBootstrap /> Bootstrap</li>
+                </ul>
+              </div>
+            </Col>
 
-              </ul>
-            </div>
-          </Col>
+            {/* Backend */}
+            <Col md={4}>
+              <div className="p-4 text-dark rounded-4 shadow-sm h-100 skill-cards">
+                <h5 className="fw-bold mb-3">Backend Development</h5>
+                <ul className="list-unstyled ps-3">
+                  <li><FaNode /> Node.js</li>
+                  <li><SiExpress /> Express.js</li>
+                  <li><SiMongodb /> MongoDB</li>
+                  <li>REST APIs</li>
+                </ul>
+              </div>
+            </Col>
 
-
-          <Col md={4}>
-            <div className="p-4   text-dark rounded-4 shadow-sm h-100 skill-cards">
-              <h5 className="fw-bold mb-3">Backend Development</h5>
-              <ul className="list-unstyled ps-3">
-                <li><FaNode></FaNode> Node.js</li>
-                <li> <SiExpress></SiExpress> Express.js</li>
-                <li><SiMongodb></SiMongodb> MongoDB</li>
-                <li><FaDatabase></FaDatabase> REST APIs</li>
-              </ul>
-            </div>
-          </Col>
-
-          <Col md={4}>
-            <div className="p-4   text-dark rounded-4 shadow-sm h-100 skill-cards">
-              <h5 className="fw-bold mb-3">Tools & Platforms</h5>
-              <ul className="list-unstyled ps-3">
-  <li><FaGit style={{ color: '#f1502f' }} /> Git & GitHub</li>
-  <li><VscJson style={{ color: '#007ACC' }} /> VS Code</li>
-  <li><SiNetlify style={{ color: '#38bdf8' }} /> Netlify / Vercel</li>
-  <li><FaTools style={{ color: '#6c757d' }} /> Chrome DevTools</li>
-</ul>
-
-            </div>
-          </Col>
-        </Row>
+            {/* Tools */}
+            <Col md={4}>
+              <div className="p-4 text-dark rounded-4 shadow-sm h-100 skill-cards">
+                <h5 className="fw-bold mb-3">Tools & Platforms</h5>
+                <ul className="list-unstyled ps-3">
+                  <li><FaGit style={{ color: '#f1502f' }} /> Git & GitHub</li>
+                  <li><VscJson style={{ color: '#007ACC' }} /> VS Code</li>
+                  <li><SiNetlify style={{ color: '#38bdf8' }} /> Netlify / Vercel</li>
+                  <li><FaTools style={{ color: '#6c757d' }} /> Chrome DevTools</li>
+                </ul>
+              </div>
+            </Col>
+          </Row>
         </div>
       </Container>
     </section>
