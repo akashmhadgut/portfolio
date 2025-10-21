@@ -1,12 +1,11 @@
- 
-import './App.css'
-import About from './assets/About'
-import Contact from './assets/Contact'
-import Footer from './assets/Footer'
-import Home from './assets/Home'
-import NavBar from './assets/Navbar'
-import Projects from './assets/Projects'
-import Resume from './assets/Resume'
+import About from './assets/About.jsx';
+import Contact from './assets/Contact.jsx';
+import Footer from './assets/Footer.jsx';
+import Home from './assets/Home.jsx';
+import NavBar from './assets/Navbar.jsx';
+import Projects from './assets/Projects.jsx';
+import Resume from './assets/Resume.jsx';
+
 
 function App() {
    
